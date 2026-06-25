@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+vectorstore/
+data/raw_pdfs/
+data/processed/

@@ -52,9 +52,9 @@ if uploaded_file is not None:
 
         with st.spinner("Processing document... ⏳"):
 
-            subprocess.run(["python", "src/ingest.py"])
-            subprocess.run(["python", "src/chunking.py"])
-            subprocess.run(["python", "src/embeddings.py"])
+            subprocess.run([sys.executable, "src/ingest.py"], check=True)
+            subprocess.run([sys.executable, "src/chunking.py"], check=True)
+            subprocess.run([sys.executable, "src/embeddings.py"], check=True)
 
         st.session_state.db_ready = True
         st.success("Knowledge base ready! ✅")
