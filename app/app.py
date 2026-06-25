@@ -17,6 +17,50 @@ st.set_page_config(
 )
 
 st.title("🎓 KnowYourCampus AI")
+# ---------------- Sidebar ---------------- #
+
+with st.sidebar:
+    st.title("🎓 KnowYourCampus AI")
+
+    st.markdown("---")
+
+    st.markdown("""
+### 📖 About
+
+KnowYourCampus AI is a cloud-deployed Retrieval-Augmented Generation (RAG) application that allows students to upload their college handbook and ask natural language questions.
+
+The application extracts information from uploaded PDFs, performs semantic search using FAISS, and generates accurate answers with Google's Gemini AI.
+""")
+
+    st.markdown("---")
+
+    st.markdown("### 🛠 Tech Stack")
+
+    st.markdown("""
+- 🐍 Python
+- 🎈 Streamlit
+- 🤖 Google Gemini
+- 🔎 FAISS
+- 🧠 Sentence Transformers
+- 📄 PyPDF
+- ☁️ Streamlit Cloud
+""")
+
+    st.markdown("---")
+
+    st.markdown("### 💡 How to Use")
+
+    st.markdown("""
+1. Upload a college handbook PDF.
+2. Click **Build Knowledge Base**.
+3. Wait for processing.
+4. Ask your questions.
+5. Get AI-powered answers with document context.
+""")
+
+    st.markdown("---")
+
+    st.markdown("Developed by **Satwik Panchagnula** 🧑🏻‍💻")
 st.write("Upload your college handbook and ask questions about it.")
 
 # -----------------------------
