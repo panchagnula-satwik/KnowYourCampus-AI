@@ -1,8 +1,19 @@
+<p align="center">
+
+<img src="assets/banner.png" alt="KnowYourCampus AI Banner" width="100%">
+
+</p>
 # 🎓 KnowYourCampus AI
 
 ### **An AI-powered Academic Assistant built using Retrieval-Augmented Generation (RAG)**
 
 Transform static college handbooks into an intelligent AI assistant capable of answering academic questions in natural language.
+
+## 🎯 Problem Statement
+
+College handbooks contain valuable academic information but are often lengthy and difficult to navigate. Students spend significant time manually searching through hundreds of pages to find simple answers.
+
+KnowYourCampus AI solves this problem by converting static PDF handbooks into an intelligent conversational assistant using Retrieval-Augmented Generation (RAG), enabling instant, context-aware question answering.
 
 <p align="center">
 
@@ -154,65 +165,12 @@ Displays the retrieved document context used to generate every response.
 
 # 🏗 System Architecture
 
-```text
-                    📄 User Uploads PDF
-                             │
-                             ▼
-                 Text Extraction (PyPDF)
-                             │
-                             ▼
-                  Intelligent Chunking
-                             │
-                             ▼
-     SentenceTransformer Embedding Generation
-                             │
-                             ▼
-               FAISS Vector Database
-                             │
-                             ▼
-                Semantic Similarity Search
-                             │
-                             ▼
-         Relevant Document Chunks Retrieved
-                             │
-                             ▼
-           Google Gemini 2.5 Flash LLM
-                             │
-                             ▼
-           Context-Aware AI Generated Answer
-```
+![Architecture](assets/system_architecture.png)
 
----
 
-# 🔄 End-to-End Workflow
+# 🔄 RAG Workflow
 
-```text
-            Upload College Handbook
-                     │
-                     ▼
-              Extract PDF Text
-                     │
-                     ▼
-            Split into Chunks
-                     │
-                     ▼
-          Generate Vector Embeddings
-                     │
-                     ▼
-             Store in FAISS Index
-                     │
-                     ▼
-            User Asks a Question
-                     │
-                     ▼
-      Retrieve Relevant Context Chunks
-                     │
-                     ▼
-      Generate Answer using Gemini AI
-                     │
-                     ▼
-        Display Answer + Source Context
-```
+![Architecture](assets/rag_workflow.png)
 
 ---
 
@@ -364,7 +322,7 @@ KnowYourCampus-AI
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/KnowYourCampus-AI.git
+git clone https://github.com/panchagnula-satwik/KnowYourCampus-AI.git
 
 cd KnowYourCampus-AI
 ```
@@ -425,7 +383,7 @@ The application will automatically open in your browser.
 
 Try the deployed application here:
 
-### 🚀 https://knowyourcampus.streamlit.app
+### 🚀 https://knowyourcampus-ai.streamlit.app
 
 ---
 
@@ -585,37 +543,6 @@ Through this project, I gained practical experience in:
 
 ---
 
-# 👨‍💻 Developer
-
-## Satwik Panchagnula
-
-**B.Tech — Computer Science & Engineering (Artificial Intelligence & Machine Learning)**
-
-Malla Reddy College of Engineering & Technology
-
-Passionate about building practical AI applications using Machine Learning, Natural Language Processing, Large Language Models, and Retrieval-Augmented Generation.
-
----
-
-## 🔗 Connect with Me
-
-- 💼 LinkedIn: https://www.linkedin.com/in/satwik-panchagnula
-- 💻 GitHub: https://github.com/panchagnula-satwik
-
----
-
-# ⭐ Support
-
-If you found this project useful,
-
-⭐ Star this repository
-
-🍴 Fork it
-
-📢 Share it with others
-
----
-
 # 📄 License
 
 This project is intended for educational and portfolio purposes.
@@ -631,5 +558,169 @@ Feel free to explore, learn from, and build upon it.
 ### Upload • Ask • Learn
 
 Built with ❤️ by **Satwik Panchagnula**
+
+</p>
+
+---
+
+# 🎯 Real-World Applications
+
+KnowYourCampus AI can be adapted beyond college handbooks to support a wide range of document-based AI assistants.
+
+### 🎓 Education
+- College Academic Regulations
+- Course Handbooks
+- Placement Guidelines
+- Hostel Manuals
+- Examination Policies
+
+### 🏢 Enterprise
+- Company SOPs
+- Employee Handbooks
+- HR Policy Documents
+- Internal Knowledge Bases
+
+### ⚖ Legal
+- Contracts
+- Compliance Documents
+- Government Notifications
+
+### 🏥 Healthcare
+- Hospital Guidelines
+- Medical Protocols
+- Patient Information Documents
+
+### 📚 Research
+- Research Papers
+- Technical Documentation
+- User Manuals
+
+---
+
+# 💡 Challenges Solved
+
+Traditional PDF documents present several usability challenges.
+
+❌ Time-consuming manual searching
+
+❌ Keyword-based search limitations
+
+❌ Large documents are difficult to navigate
+
+❌ Information scattered across hundreds of pages
+
+KnowYourCampus AI addresses these challenges through semantic search and Retrieval-Augmented Generation, enabling users to interact with documents conversationally.
+
+---
+
+# 📈 Project Highlights
+
+| Feature | Status |
+|----------|--------|
+| Dynamic PDF Upload | ✅ |
+| Text Extraction | ✅ |
+| Intelligent Chunking | ✅ |
+| Semantic Embeddings | ✅ |
+| FAISS Vector Search | ✅ |
+| Google Gemini Integration | ✅ |
+| RAG Pipeline | ✅ |
+| Cloud Deployment | ✅ |
+| Browser-based UI | ✅ |
+| Source Context Display | ✅ |
+
+---
+
+# 📊 Skills Demonstrated
+
+This project demonstrates practical experience in:
+
+- Artificial Intelligence
+- Retrieval-Augmented Generation (RAG)
+- Prompt Engineering
+- Natural Language Processing
+- Semantic Search
+- Vector Databases
+- Streamlit Development
+- Cloud Deployment
+- Software Engineering
+- API Integration
+- Git & GitHub
+- Python Programming
+
+---
+
+# 🚀 Future Roadmap
+
+The following improvements are planned for future versions.
+
+### Version 2.0
+
+- 💬 Chat History
+- 📄 Multi-document Knowledge Base
+- 📖 Page Number Citations
+- 📊 Knowledge Base Analytics
+- 🧠 Conversation Memory
+
+### Version 3.0
+
+- 🎙 Voice Assistant
+- 🌐 Multi-language Support
+- 🤖 Local LLM Support (Ollama)
+- 🔍 Hybrid Search (Keyword + Semantic)
+- 👥 User Authentication
+
+---
+
+# 👨‍💻 About the Developer
+
+## Satwik Panchagnula
+
+**B.Tech – Computer Science & Engineering (Artificial Intelligence & Machine Learning)**
+
+Malla Reddy College of Engineering & Technology
+
+I'm passionate about building practical AI applications that solve real-world problems using Machine Learning, Large Language Models, Retrieval-Augmented Generation, and Natural Language Processing.
+
+This project reflects my interest in developing intelligent software that makes information more accessible through AI.
+
+---
+
+## 📬 Connect With Me
+
+<p align="left">
+
+<a href="https://www.linkedin.com/in/satwik-panchagnula">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://github.com/panchagnula-satwik">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+</p>
+
+---
+
+# ⭐ Support the Project
+
+If you enjoyed this project,
+
+⭐ Star the repository
+
+🍴 Fork it
+
+💬 Share your feedback
+
+Your support helps improve future AI projects.
+
+---
+
+<p align="center">
+
+# 🎓 KnowYourCampus AI
+
+### Upload • Ask • Learn
+
+Built with ❤️ using Python, FAISS, Streamlit & Google Gemini
 
 </p>
