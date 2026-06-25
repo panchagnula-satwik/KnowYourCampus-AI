@@ -17,6 +17,16 @@ st.set_page_config(
 )
 
 st.title("🎓 KnowYourCampus AI")
+st.markdown("""
+# 🎓 KnowYourCampus AI
+
+### Your AI-powered academic assistant
+
+Upload your college handbook and ask questions in natural language.
+Powered by **Retrieval-Augmented Generation (RAG)**, **FAISS**, and **Google Gemini**.
+
+---
+""")
 # ---------------- Sidebar ---------------- #
 
 with st.sidebar:
@@ -74,6 +84,9 @@ if "db_ready" not in st.session_state:
 # FILE UPLOAD
 # -----------------------------
 
+st.info(
+    "📘 Upload any college handbook, academic regulations, placement policy, hostel manual, or similar PDF to build your own AI knowledge base."
+)
 uploaded_file = st.file_uploader(
     "Upload your college handbook (PDF)",
     type="pdf"
