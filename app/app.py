@@ -18,8 +18,6 @@ st.set_page_config(
 
 st.title("🎓 KnowYourCampus AI")
 st.markdown("""
-# 🎓 KnowYourCampus AI
-
 ### Your AI-powered academic assistant
 
 Upload your college handbook and ask questions in natural language.
