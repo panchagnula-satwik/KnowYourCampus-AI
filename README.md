@@ -1,155 +1,72 @@
 # 🎓 KnowYourCampus AI
 
-An AI-powered assistant that answers college academic and policy-related queries using Retrieval-Augmented Generation (RAG).
+### **An AI-powered Academic Assistant built using Retrieval-Augmented Generation (RAG)**
+
+Transform static college handbooks into an intelligent AI assistant capable of answering academic questions in natural language.
+
+<p align="center">
+
+<a href="YOUR_STREAMLIT_URL">
+<img src="https://img.shields.io/badge/🌐_Live_Demo-00C853?style=for-the-badge" />
+</a>
+
+<a href="YOUR_GITHUB_REPO">
+<img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" />
+</a>
+
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/RAG-Retrieval_Augmented_Generation-blueviolet?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/FAISS-Vector_Search-009688?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Sentence_Transformers-NLP-orange?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/PDF-Document_AI-red?style=for-the-badge"/>
+
+</p>
 
 ---
 
-## 🚀 Overview
+# 📖 Project Overview
 
-KnowYourCampus AI allows students to upload their college handbook and ask questions in natural language.
-The system retrieves relevant information from the document and generates accurate answers using AI.
+Finding information inside lengthy academic handbooks can be frustrating. Students often spend valuable time searching through hundreds of pages to locate attendance rules, grading policies, examination regulations, placement guidelines, hostel rules, and other important information.
 
----
+**KnowYourCampus AI** eliminates this problem by converting any college handbook into an intelligent AI-powered assistant.
 
-## 🧠 Features
+The application combines **Retrieval-Augmented Generation (RAG)** with **semantic search** to understand the contents of uploaded PDF documents and answer user questions using only the relevant information from those documents.
 
-* 📄 Upload any college handbook (PDF)
-* 🔍 Semantic search using embeddings
-* 🤖 AI-powered answers using Gemini
-* 🧾 Source-based responses (no hallucination)
-* ⚡ Fast retrieval using FAISS
-* 🌐 Interactive UI using Streamlit
+Unlike traditional keyword search, the system understands the **meaning** behind a question, retrieves the most relevant sections using vector embeddings, and generates context-aware responses with **Google Gemini**.
+
+The application is fully cloud-deployed using **Streamlit Community Cloud**, allowing users to upload any college handbook directly from their browser without installing additional software.
 
 ---
 
-## 🏗️ Architecture
+# ✨ Key Highlights
 
-```
-User Upload PDF
-      ↓
-Ingestion (Text Extraction)
-      ↓
-Chunking
-      ↓
-Embeddings (MiniLM)
-      ↓
-FAISS Vector Store
-      ↓
-Retriever
-      ↓
-Gemini (LLM)
-      ↓
-Final Answer
-```
+✅ Upload any college handbook or academic regulation PDF
+
+✅ Automatically build a searchable AI knowledge base
+
+✅ Semantic document search using FAISS vector indexing
+
+✅ Context-aware question answering using Google Gemini
+
+✅ Dynamic document processing (works with different colleges)
+
+✅ Fully browser-based deployment using Streamlit Cloud
+
+✅ Clean, responsive, and interactive web interface
 
 ---
 
-## 🛠️ Tech Stack
+> **"Upload once. Ask anything. Learn instantly."**
 
-* Python
-* Streamlit
-* FAISS
-* Sentence Transformers (all-MiniLM-L6-v2)
-* Google Gemini API
-* PyPDF
-
----
-
-## 📂 Project Structure
-
-```
-Know Your Campus/
-│
-├── app/
-│   └── app.py
-│
-├── src/
-│   ├── ingest.py
-│   ├── chunking.py
-│   ├── embeddings.py
-│   ├── retriever.py
-│   └── rag_pipeline.py
-│
-├── data/
-│   ├── raw_pdfs/
-│   └── processed/
-│
-├── vectorstore/
-│
-├── .env.example
-├── requirements.txt
-├── README.md
-```
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the repository
-
-```bash
-git clone <your-repo-link>
-cd KnowYourCampus
-```
-
-### 2. Install dependencies
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 3. Add API Key
-
-Create a `.env` file:
-
-```
-GEMINI_API_KEY=your_api_key_here
-```
-
----
-
-### 4. Run the app
-
-```bash
-streamlit run app/app.py
-```
-
----
-
-## 🧪 How It Works
-
-1. Upload your college handbook PDF
-2. Click **"Build Knowledge Base"**
-3. Ask questions like:
-
-   * What is attendance requirement?
-   * How many credits are needed?
-4. Get accurate AI-generated answers
-
----
-
-## 🚫 Hallucination Control
-
-The system strictly answers only from provided context.
-If information is not available, it responds:
-
-> "I don't have enough information to answer this question."
-
----
-
-## 📌 Future Improvements
-
-* Multi-document support
-* Chat history
-* Deployment (Streamlit Cloud)
-* Voice input
-
----
-
-## 👨‍💻 Author
-
-**Satwik Panchagnula**
-
----
-
-## ⭐ If you like this project, give it a star!
