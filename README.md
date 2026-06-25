@@ -250,3 +250,248 @@ This approach provides:
 | Deployment | Streamlit Community Cloud |
 
 ---
+# 🛠️ Technology Stack
+
+<table>
+<tr>
+<td align="center" width="180">
+
+### 🐍 Programming
+
+Python 3.12
+
+</td>
+
+<td align="center" width="180">
+
+### 🎈 Frontend
+
+Streamlit
+
+</td>
+
+<td align="center" width="180">
+
+### 🤖 AI Model
+
+Google Gemini 2.5 Flash
+
+</td>
+
+<td align="center" width="180">
+
+### 🧠 Embeddings
+
+Sentence Transformers
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+### 🔍 Vector Search
+
+FAISS
+
+</td>
+
+<td align="center">
+
+### 📄 PDF Processing
+
+PyPDF
+
+</td>
+
+<td align="center">
+
+### 📦 Environment
+
+Python Dotenv
+
+</td>
+
+<td align="center">
+
+### ☁️ Deployment
+
+Streamlit Community Cloud
+
+</td>
+</tr>
+</table>
+
+---
+
+# 📂 Project Structure
+
+```text
+KnowYourCampus-AI
+│
+├── app
+│   └── app.py                 # Streamlit application
+│
+├── config
+│   └── config.yaml            # Configuration file
+│
+├── data
+│   ├── raw_pdfs               # Uploaded PDFs
+│   └── processed              # Generated text & chunks
+│
+├── src
+│   ├── ingest.py              # PDF text extraction
+│   ├── chunking.py            # Document chunk creation
+│   ├── embeddings.py          # Embedding generation
+│   ├── retriever.py           # FAISS semantic search
+│   ├── rag_pipeline.py        # Gemini integration
+│   └── utils.py               # Helper functions
+│
+├── assets                     # README screenshots
+│
+├── .streamlit
+│   └── config.toml
+│
+├── requirements.txt
+├── .env.example
+└── README.md
+```
+
+---
+
+# ⚙️ Installation Guide
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/KnowYourCampus-AI.git
+
+cd KnowYourCampus-AI
+```
+
+---
+
+## 2️⃣ Create a Virtual Environment
+
+### Windows
+
+```bash
+python -m venv .venv
+
+.venv\Scripts\activate
+```
+
+### macOS / Linux
+
+```bash
+python3 -m venv .venv
+
+source .venv/bin/activate
+```
+
+---
+
+## 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4️⃣ Configure Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+> 💡 You can generate a free API key from **Google AI Studio**.
+
+---
+
+## 5️⃣ Launch the Application
+
+```bash
+streamlit run app/app.py
+```
+
+The application will automatically open in your browser.
+
+---
+
+# 🌐 Live Demo
+
+Try the deployed application here:
+
+### 🚀 https://knowyourcampus.streamlit.app
+
+*(Replace this with your final deployed URL if you choose a different subdomain.)*
+
+---
+
+# 📖 How to Use
+
+### Step 1
+
+Upload any college handbook in PDF format.
+
+↓
+
+### Step 2
+
+Click **Build Knowledge Base**.
+
+↓
+
+### Step 3
+
+Wait while the application:
+
+- extracts text
+- creates chunks
+- generates embeddings
+- builds the FAISS index
+
+↓
+
+### Step 4
+
+Ask questions in natural language.
+
+↓
+
+### Step 5
+
+Receive AI-generated answers with the retrieved document context.
+
+---
+
+# 🔐 Environment Variables
+
+| Variable | Description |
+|-----------|-------------|
+| `GEMINI_API_KEY` | Google Gemini API Key |
+
+---
+
+# 💻 Supported Platforms
+
+✅ Windows
+
+✅ Linux
+
+✅ macOS
+
+✅ Streamlit Cloud
+
+---
+
+# 📌 Requirements
+
+- Python 3.12+
+- Internet connection
+- Gemini API Key
+
+---
