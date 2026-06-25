@@ -427,8 +427,6 @@ Try the deployed application here:
 
 ### 🚀 https://knowyourcampus.streamlit.app
 
-*(Replace this with your final deployed URL if you choose a different subdomain.)*
-
 ---
 
 # 📖 How to Use
@@ -495,3 +493,143 @@ Receive AI-generated answers with the retrieved document context.
 - Gemini API Key
 
 ---
+# 🎥 Live Demonstration
+
+Experience the application live without any local installation.
+
+<p align="center">
+
+<a href="https://knowyourcampus.streamlit.app">
+<img src="https://img.shields.io/badge/🚀_Launch_Live_Application-00C853?style=for-the-badge"/>
+</a>
+
+</p>
+
+---
+
+# 📸 More Application Screens
+
+## 📤 Upload a College Handbook
+
+![Upload](assets/upload.png)
+
+---
+
+## 🤖 AI Response Generation
+
+The application retrieves only the most relevant document sections before generating an answer.
+
+![Answer](assets/answer.png)
+
+---
+
+## 📚 Retrieved Context
+
+Every answer is backed by the retrieved context, making responses transparent and trustworthy.
+
+![Context](assets/context.png)
+
+---
+
+# 🌟 Why KnowYourCampus AI?
+
+Most students spend valuable time searching through lengthy PDF handbooks for attendance rules, grading systems, examination policies, placement information, hostel regulations, and other academic details.
+
+KnowYourCampus AI transforms these static documents into an intelligent assistant capable of understanding natural language questions and providing instant, context-aware answers.
+
+Instead of manually scrolling through hundreds of pages, students can simply ask:
+
+> "What is the minimum attendance required?"
+
+or
+
+> "How many credits are required for graduation?"
+
+and receive accurate answers within seconds.
+
+---
+
+# 🚀 Future Enhancements
+
+This project has been designed with extensibility in mind.
+
+Planned improvements include:
+
+- 💬 Chat history with conversational memory
+- 📄 Support for multiple PDF documents
+- 📚 Source page references
+- 🖼 OCR support for scanned PDFs
+- 🎙 Voice-based question answering
+- 🌐 Multi-language support
+- 🧠 Local LLM integration using Ollama
+- 🔍 Hybrid Search (Semantic + Keyword)
+- 📊 Analytics dashboard for document insights
+- 👥 Multi-user authentication
+
+---
+
+# 🎯 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- Retrieval-Augmented Generation (RAG)
+- Large Language Model Integration
+- Semantic Search
+- Vector Databases
+- Prompt Engineering
+- Cloud Deployment
+- Streamlit Application Development
+- Document Intelligence
+- GitHub Version Control
+- End-to-End AI Application Development
+
+---
+
+# 👨‍💻 Developer
+
+## Satwik Panchagnula
+
+**B.Tech — Computer Science & Engineering (Artificial Intelligence & Machine Learning)**
+
+Malla Reddy College of Engineering & Technology
+
+Passionate about building practical AI applications using Machine Learning, Natural Language Processing, Large Language Models, and Retrieval-Augmented Generation.
+
+---
+
+## 🔗 Connect with Me
+
+- 💼 LinkedIn: https://www.linkedin.com/in/satwik-panchagnula
+- 💻 GitHub: https://github.com/panchagnula-satwik
+
+---
+
+# ⭐ Support
+
+If you found this project useful,
+
+⭐ Star this repository
+
+🍴 Fork it
+
+📢 Share it with others
+
+---
+
+# 📄 License
+
+This project is intended for educational and portfolio purposes.
+
+Feel free to explore, learn from, and build upon it.
+
+---
+
+<p align="center">
+
+### 🎓 KnowYourCampus AI
+
+### Upload • Ask • Learn
+
+Built with ❤️ by **Satwik Panchagnula**
+
+</p>
