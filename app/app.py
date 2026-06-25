@@ -9,7 +9,12 @@ import streamlit as st
 from src.retriever import retrieve
 from src.rag_pipeline import generate_answer
 
-st.set_page_config(page_title="KnowYourCampus AI")
+st.set_page_config(
+    page_title="KnowYourCampus AI",
+    page_icon="🎓",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 st.title("🎓 KnowYourCampus AI")
 st.write("Upload your college handbook and ask questions about it.")
