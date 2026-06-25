@@ -70,3 +70,183 @@ The application is fully cloud-deployed using **Streamlit Community Cloud**, all
 
 > **"Upload once. Ask anything. Learn instantly."**
 
+---
+
+# 📸 Application Preview
+
+## 🏠 Home Page
+
+![Home](assets/home.png)
+
+---
+
+## 💬 AI-Powered Question Answering
+
+![Answer](assets/answer.png)
+
+---
+
+## 📖 Retrieved Context
+
+![Retrieved Context](assets/context.png)
+
+---
+
+# 🚀 Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 📄 Dynamic PDF Upload
+
+Upload any college handbook or academic regulation document directly through the web interface.
+
+</td>
+
+<td width="50%">
+
+### 🧠 Semantic Search
+
+Retrieves relevant information based on meaning rather than exact keyword matching using vector embeddings.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 🤖 AI-Powered Responses
+
+Google Gemini generates context-aware answers grounded in the uploaded handbook.
+
+</td>
+
+<td>
+
+### ⚡ Instant Knowledge Base
+
+Automatically extracts text, chunks documents, creates embeddings, and builds a searchable FAISS vector database.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### ☁️ Cloud Deployment
+
+Accessible directly from any browser using Streamlit Community Cloud.
+
+</td>
+
+<td>
+
+### 📚 Source Transparency
+
+Displays the retrieved document context used to generate every response.
+
+</td>
+</tr>
+</table>
+
+---
+
+# 🏗 System Architecture
+
+```text
+                    📄 User Uploads PDF
+                             │
+                             ▼
+                 Text Extraction (PyPDF)
+                             │
+                             ▼
+                  Intelligent Chunking
+                             │
+                             ▼
+     SentenceTransformer Embedding Generation
+                             │
+                             ▼
+               FAISS Vector Database
+                             │
+                             ▼
+                Semantic Similarity Search
+                             │
+                             ▼
+         Relevant Document Chunks Retrieved
+                             │
+                             ▼
+           Google Gemini 2.5 Flash LLM
+                             │
+                             ▼
+           Context-Aware AI Generated Answer
+```
+
+---
+
+# 🔄 End-to-End Workflow
+
+```text
+            Upload College Handbook
+                     │
+                     ▼
+              Extract PDF Text
+                     │
+                     ▼
+            Split into Chunks
+                     │
+                     ▼
+          Generate Vector Embeddings
+                     │
+                     ▼
+             Store in FAISS Index
+                     │
+                     ▼
+            User Asks a Question
+                     │
+                     ▼
+      Retrieve Relevant Context Chunks
+                     │
+                     ▼
+      Generate Answer using Gemini AI
+                     │
+                     ▼
+        Display Answer + Source Context
+```
+
+---
+
+# 🧠 How Retrieval-Augmented Generation (RAG) Works
+
+Traditional Large Language Models answer questions using only their pre-trained knowledge. This often leads to hallucinations or outdated responses when asked about custom documents.
+
+KnowYourCampus AI overcomes this limitation through **Retrieval-Augmented Generation (RAG)**.
+
+Instead of sending the entire PDF directly to the language model, the application first retrieves the most relevant sections of the uploaded handbook using semantic similarity search.
+
+Only those highly relevant document chunks are passed to **Google Gemini**, ensuring that every response is grounded in the uploaded document rather than relying on the model's general knowledge.
+
+This approach provides:
+
+- ✅ Higher answer accuracy
+- ✅ Reduced hallucinations
+- ✅ Faster response generation
+- ✅ Document-specific reasoning
+- ✅ Reliable academic information retrieval
+
+---
+
+# ⚙ AI Pipeline
+
+| Stage | Technology |
+|--------|------------|
+| PDF Processing | PyPDF |
+| Text Chunking | Python |
+| Embedding Generation | Sentence Transformers |
+| Vector Database | FAISS |
+| Semantic Retrieval | Cosine Similarity Search |
+| Language Model | Google Gemini 2.5 Flash |
+| User Interface | Streamlit |
+| Deployment | Streamlit Community Cloud |
+
+---
