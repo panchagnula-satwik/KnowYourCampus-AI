@@ -3,6 +3,9 @@
 <img src="assets/banner.png" alt="KnowYourCampus AI Banner" width="100%">
 
 </p>
+
+<br>
+
 # 🎓 KnowYourCampus AI
 
 ### **An AI-powered Academic Assistant built using Retrieval-Augmented Generation (RAG)**
