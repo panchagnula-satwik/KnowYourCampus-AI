@@ -6,11 +6,11 @@ Transform static college handbooks into an intelligent AI assistant capable of a
 
 <p align="center">
 
-<a href="YOUR_STREAMLIT_URL">
+<a href="https://knowyourcampus-ai.streamlit.app/">
 <img src="https://img.shields.io/badge/🌐_Live_Demo-00C853?style=for-the-badge" />
 </a>
 
-<a href="YOUR_GITHUB_REPO">
+<a href="https://github.com/panchagnula-satwik/KnowYourCampus-AI">
 <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" />
 </a>
 
